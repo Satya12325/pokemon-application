@@ -131,7 +131,7 @@ export default function FormInput() {
     setKm(0);
     setImage("")
   }
-
+console.log(data,"data")
   const handleSum = () => {
     for (let i = 0; i < ticket.length; i++) {
       setSum(sum + ticket[i].cost);
@@ -396,9 +396,10 @@ export default function FormInput() {
                       <TableCard
                       key={item.id}
                       image={item.image}
-                      codeNmae={item.code}
+                      codeName={item.code}
                       cost ={item.cost}
                       distance={item.distance}
+                      title={item.title}
                       />
                     ))
                   }
